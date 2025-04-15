@@ -64,3 +64,4 @@ C:\Users\maksy\RiderProjects\PlanerDnia\PlanerDnia\obj\Debug\net9.0\refint\Avalo
 C:\Users\maksy\RiderProjects\PlanerDnia\PlanerDnia\obj\Debug\net9.0\PlanerDnia.csproj.Up2Date
 C:\Users\maksy\RiderProjects\PlanerDnia\PlanerDnia\obj\Debug\net9.0\PlanerDnia.genruntimeconfig.cache
 C:\Users\maksy\RiderProjects\PlanerDnia\PlanerDnia\obj\Debug\net9.0\ref\PlanerDnia.dll
+C:\Users\maksy\RiderProjects\PlanerDnia\PlanerDnia\obj\Debug\net9.0\PlanerDnia.sourcelink.json

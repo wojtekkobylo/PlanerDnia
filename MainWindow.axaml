@@ -6,7 +6,7 @@
         x:Class="PlanerDnia.MainWindow">
     
     <StackPanel>
-        <TextBox x:Name="Zadanie" Width="200" Height="30" Watermark="Podaj swoje imie" />
+        <TextBox x:Name="Zadanie" Width="200" Height="30" Watermark="Podaj nazwe zadania" />
         
         <ComboBox x:Name="ComboBoxZadania" Width="200" HorizontalAlignment="Center">
             <ComboBoxItem Content="Praca"/>
@@ -17,7 +17,7 @@
         </ComboBox>
         
         <Button x:Name="Stworz" HorizontalAlignment="Center">Utworz zadanie</Button>
-        <ListBox x:Name="ListaZadanBox" Width="300" Height="200" />
+        <ListBox x:Name="ListaZadanBox" Width="300" Height="200" SelectionChanged="ListaZadanBoxChanged"/>
         
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center"> 
             <Grid.RowDefinitions>
@@ -44,9 +44,10 @@
             </ComboBox>
             
             <CheckBox x:Name="Ukonczone" Grid.Row="2" Grid.Column="0"  Content="Ukończone"/>
-            <Button Grid.Row="3" x:Name="ZapiszZmiany" Content="Zapisz zmiany" />
-            <Button Grid.Row="3" Grid.Column="1" x:Name="UsunZadanie" Content="Usuń zadanie" />
+            <Button Grid.Row="3" x:Name="ZapiszZmiany" Content="Zapisz zmiany" Click="ZapiszZmianyButton"/>
+            <Button Grid.Row="3" Grid.Column="1" x:Name="UsunZadanie" Content="Usuń zadanie" Click="UsunZadanieButton" />
+        
+        <TextBlock x:Name="Podsumowanie" Text="" Grid.Row="4" Grid.Column="0"></TextBlock>
         </Grid>
-        <TextBlock x:Name="Podsumowanie" Text=""></TextBlock>
     </StackPanel>
 </Window>
